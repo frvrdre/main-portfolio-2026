@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Climate+Crisis:YEAR@1979&family=Geo:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Limelight&family=Oi&family=Roboto:ital,wght@0,100..900;1,100..900&family=Skranji:wght@400;700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 2;
+  font-size: 17px;
+  background-color: rgb(16, 18, 27);
+  color: rgb(68, 81, 139);
+}
+
+main {
+  width: min(100% - 50rem, 75rem);
+  margin-inline: auto;
+}
+
+main > section {
+  padding-block: 4em;
+  margin-left: 8vw;
+}
+
+footer {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Header and main use the same page width */
+
+.site-header,
+main,
+.site-footer {
+  width: min(100% - 2rem, 70rem);
+  margin-inline: auto;
+}
+
+.site-header {
+  margin-top: 1rem;
+}
+
+.nav {
+  color: inherit;
+  text-decoration: none;
+  border: 1px;
+}
+
+.primary-nav > a {
+  color: white;
+  background-color: rgba(88, 104, 177, 0);
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.primary-nav > a:hover {
+  color: rgba(88, 104, 177, 0.959);
+}
+
+.btn {
+  color: white;
+  background-color: rgb(88, 105, 177);
+  text-decoration: none;
+  border: 1px;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.btn:hover {
+  background-color: rgb(88, 105, 177);
+  color: rgb(201, 201, 201);
+}
+
+/* Small visible navbar centred inside the aligned header */
+
+.primary-nav {
+  width: max-content;
+  margin: 1rem auto;
+  padding: 0.5rem 2rem;
+  background-color: rgb(40, 46, 70);
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.hero-sub,
+h1 {
+  display: flex;
+  line-height: 0.1px;
+  font-size: 2.5rem;
+  width: min(100% - 2rem, 70rem);
+  color: rgb(88, 105, 177);
+}
+
+p,
+a,
+h3 {
+  color: white;
+  font-family: "Source Code Pro", monospace;
+  max-width: 75%;
+}
+
+.project-card > a {
+  width: 5;
+}
+
+.project-card,
+article {
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  background-color: rgb(42, 49, 83);
+  max-width: 34%;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 15px;
+  margin-right: 15px;
+  font-size: 16px;
+  max-height: 63.5vh;
+}
+
+img {
+  max-width: 100%;
+}
