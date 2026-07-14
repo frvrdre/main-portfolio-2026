@@ -220,7 +220,7 @@ main > section {
 }
 
 .primary-nav > a:hover {
-  color: var(--color-primary-hover);
+  color: var(--color-secondary-hover);
 }
 
 .primary-nav > a:focus-visible {
