@@ -4,157 +4,280 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://frvrdre.xyz/">
-  <meta property="og:site_name" content="Andres Young's Portfolio">
-  <meta property="og:image" itemprop="image primaryImageOfPage" href="/assets/preview.png">
-  <meta name="description" content="This portfolio belongs to Andres featuring my projects, skills, and my learning journey.">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://frvrdre.xyz/" />
+    <meta property="og:site_name" content="Andres Young's Portfolio" />
+    <meta property="og:image" content="/assets/preview.png" />
+
+    <meta
+      name="description"
+      content="This portfolio belongs to Andres featuring my projects, skills, and my learning journey."
+    />
 
     <title>Andres Young</title>
+
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+
     <script src="script.js" defer></script>
   </head>
-  
+
   <body>
+    <!-- Easter Egg #2 -->
 
-    <header class="site-header">
-      <nav class="primary-nav">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-    <main>
-      <section class="hero" id="hero">
-        <h1>Andres Young</h1>
-        <p class="hero-sub">Aspiring Front-End Developer</p>
-        <p>
-          Hi, my name is Andres but most people call me Dre. I'm a aspiring
-          front-end developer alongside being a father and fiancé, I hope to
-          land my first developer job by july 2027 and as I embark on this
-          journey I will be making a vast amount of projects.
-        </p>
-        <a class="btn" href="https://github.com/frvrdre">View on Github</a>
-      </section>
+    <!-- ACHIEVEMENT POPUP -->
 
-      <section class="about" id="about">
-        <h2>Who is Andres?</h2>
-        <p>
-      I am a 21-year-old from the United Kingdom. I currently work in the logistics industry, too pays the bills.
-       However, my main passion lies within the IT industry, specifically front-end development. 
-      I have had a strong interest in all things IT for a very long time.
+    <div id="achievement" class="achievement hidden">
+      <img
+        id="achievement-img"
+        class="achievement-img"
+        src="/assets/preview.png"
+        alt=""
+      />
 
-      This journey would not have been possible without my fiancée, who has supported me every step of the way. 
-      She has given me the free time to practise coding and has also helped with my projects by choosing colour schemes and fonts, 
-      as well as helping me make important design decisions.
+      <audio
+        class="ping"
+        id="ping"
+        src="assets/ping.mp3"
+        type="audio/mp3"
+        alt="my fiancé's notification sound"
+      >
+        Your browser does not support the audio element.
+      </audio>
 
-        </p>
-      </section>
+      <div class="achievement-text">
+        <p class="achievement-title">Achievement Unlocked</p>
+        <p class="achievement-message">You ignored the warning.</p>
+      </div>
+    </div>
 
-      <section id="projects" class="projects">
-        <h2>Projects</h2>
+    <!-- PORTFOLIO -->
 
-        <article class="project-card">
-          <img src="assets/textchanger.png" alt="sims1" />
-          <h3>Text Changer</h3>
+    <div id="portfolio" class="portfolio">
+      <header class="site-header">
+        <nav class="primary-nav">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main>
+        <!-- HERO -->
+
+        <section class="hero" id="hero">
+          <h1>Andres Young</h1>
+
+          <p class="hero-sub">Aspiring Front-End Developer</p>
+
           <p>
-            This is one of my earlier projects this year which taught me the
-            foundations of DOM manipulation in javascript and with a little help
-            from my fiance as she picked the color!
+            Hi, my name is Andres but most people call me Dre. I'm a aspiring
+            front-end developer alongside being a father and fiancé, I hope to
+            land my first developer job by july 2027 and as I embark on this
+            journey I will be making a vast amount of projects.
           </p>
 
-          <div class="buttons-container">
-          <a
-            class="btn"
-            target="_blank"
-            href="https://github.com/frvrdre/TextChanger">
-            View on Github
-          </a> 
-          <a
-            class="btn"
-            target="_blank"
-            href="https://text-changer-phi.vercel.app/">
-            View Demo
-          </a>
-        
-          </div>
-        </article>
+          <a class="btn" href="https://github.com/frvrdre"> View on Github </a>
+        </section>
 
-        <article class="project-card">
-          <img src="assets/archive.png" alt="sims1" />
-          <h3>Dev Archive</h3>
+        <!-- ABOUT -->
+
+        <section class="about" id="about">
+          <h2>Who is Andres?</h2>
+
           <p>
-            A website to store all the tools I have found that can be used for development and 
-            which I will continue to update it overtime, 
-            it also has a music player with a couple songs I like.
+            I am a 21-year-old from the United Kingdom. I currently work in the
+            logistics industry, too pays the bills. However, my main passion
+            lies within the IT industry, specifically front-end development. I
+            have had a strong interest in all things IT for a very long time.
+            This journey would not have been possible without my fiancée, who
+            has supported me every step of the way. She has given me the free
+            time to practise coding and has also helped with my projects by
+            choosing colour schemes and fonts, as well as helping me make
+            important design decisions.
           </p>
-          <div class="buttons-container">
-           <a
-            class="btn"
-            target="_blank"
-            href="https://github.com/frvrdre/archive.dev">
-            View on Github
-          </a>
-          
-          <a
-            class="btn"
-            target="_blank"
-            href="https://archive-dev-chi.vercel.app/">
-            View Demo
-          </a>
-        </div>
-        </article>
-        <article class="project-card">
-          <img src="assets/banksrl.png" alt="picutre of a project i made" />
-          <h3>Streamer Portfolio</h3>
-          <p>
-           This website was made a small content creator who wanted to have a different way to display 
-           some of their content and find out who they are.
-          </p>
-          <div class="buttons-container">
-          <a
-            class="btn"
-            target="_blank"
-            href="https://github.com/frvrdre/Streamer-portfolio">
-            View on Github
-          </a>
-          <a
-            class="btn"
-            target="_blank"
-            href="https://banksrl.co.uk/">
-            View Demo
-          </a>
+        </section>
 
-          </div>
-        </article>
-      </section>
+        <!-- PROJECTS -->
 
-      <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        
-        <ul>
-          <li>
-            <img src="assets/linkedin.svg" alt="LinkedIn profile" />
-            <a target="_blank" href="https://www.linkedin.com/in/andres-young-065b58265/">LinkedIn/@Andres Young</a>
-          </li>
+        <section id="projects" class="projects">
+          <h2>Projects</h2>
+
+          <article class="project-card">
+            <img src="assets/textchanger.png" alt="sims1" />
+
+            <h3>Text Changer</h3>
+
+            <p>
+              This is one of my earlier projects this year which taught me the
+              foundations of DOM manipulation in javascript and with a little
+              help from my fiance as she picked the color!
+            </p>
+
+            <div class="buttons-container">
+              <a
+                class="btn"
+                target="_blank"
+                href="https://github.com/frvrdre/TextChanger"
+              >
+                View on Github
+              </a>
+
+              <a
+                class="btn"
+                target="_blank"
+                href="https://text-changer-phi.vercel.app/"
+              >
+                View Demo
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/archive.png" alt="sims1" />
+
+            <h3>Dev Archive</h3>
+
+            <p>
+              A website to store all the tools I have found that can be used for
+              development and which I will continue to update it overtime, it
+              also has a music player with a couple songs I like.
+            </p>
+
+            <div class="buttons-container">
+              <a
+                class="btn"
+                target="_blank"
+                href="https://github.com/frvrdre/archive.dev"
+              >
+                View on Github
+              </a>
+
+              <a
+                class="btn"
+                target="_blank"
+                href="https://archive-dev-chi.vercel.app/"
+              >
+                View Demo
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img src="assets/banksrl.png" alt="picutre of a project i made" />
+
+            <h3>Streamer Portfolio</h3>
+
+            <p>
+              This website was made a small content creator who wanted to have a
+              different way to display some of their content and find out who
+              they are.
+            </p>
+
+            <div class="buttons-container">
+              <a
+                class="btn"
+                target="_blank"
+                href="https://github.com/frvrdre/Streamer-portfolio"
+              >
+                View on Github
+              </a>
+
+              <a class="btn" target="_blank" href="https://banksrl.co.uk/">
+                View Demo
+              </a>
+            </div>
+          </article>
+        </section>
+
+        <!-- CONTACT -->
+
+        <section id="contact" class="contact">
+          <h2>Contact Me</h2>
+
+          <ul>
             <li>
-            <img src="assets/discord.svg" alt="Discord username" />
-            <a target="_blank" href="#">Discord/@frvrdre</a>
-          </li>
-          <li>
-            <img src="assets/github.svg" alt="Github Page" />
-            <a target="_blank" href="https://github.com/frvrdre">GitHub/@frvrdre</a>
-          </li>
-        </ul>
-        <p class="contact-para">I am actively looking to contribute to meaningful and exciting projects. 
-          Please feel free to reach out to me about any opportunities, big or small!
-      
-        </p>
-      </section>
-    </main>
+              <img src="assets/linkedin.svg" alt="LinkedIn profile" />
 
-    <footer>Copyright@ Andres Young 2026</footer>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/andres-young-065b58265/"
+              >
+                LinkedIn/@Andres Young
+              </a>
+            </li>
+
+            <li>
+              <img src="assets/discord.svg" alt="Discord username" />
+
+              <a target="_blank" href="#"> Discord/@frvrdre </a>
+            </li>
+
+            <li>
+              <img src="assets/github.svg" alt="Github Page" />
+
+              <a target="_blank" href="https://github.com/frvrdre">
+                GitHub/@frvrdre
+              </a>
+            </li>
+          </ul>
+
+          <p class="contact-para">
+            I am actively looking to contribute to meaningful and exciting
+            projects. Please feel free to reach out to me about any
+            opportunities, big or small!
+          </p>
+        </section>
+      </main>
+
+      <footer>Copyright@ Andres Young 2026</footer>
+    </div>
+
+    <!-- EASTER EGG BUTTON -->
+
+    <section class="easter-egg">
+      <button id="chaos-btn" class="chaos-btn">IGNORE ME</button>
+    </section>
+
+    <!-- PORTFOLIO INVADERS -->
+
+    <div id="game-screen" class="game-screen hidden">
+      <header class="game-header">
+        <h1>Portfolio Invaders</h1>
+      </header>
+
+      <div class="game-toolbar">
+        <section class="game-stats" id="game-stats">
+          <p id="score" class="score">Score: 0</p>
+          <p id="lives" class="lives">Lives: 3</p>
+        </section>
+
+        <div class="game-btns">
+          <button id="exit-btn" class="exit-btn">EXIT</button>
+        </div>
+      </div>
+
+      <div class="game-content">
+        <div id="game-area" class="game-area">
+          <div id="player" class="player"></div>
+          <div id="enemyOne" class="enemyOne"></div>
+          <div id="enemyTwo" class="enemyTwo"></div>
+          <div id="enemyThree" class="enemyThree"></div>
+        </div>
+
+        <div id="gm-text-container" class="gm-text-container">
+          <p id="game-text" class="game-text">
+            This is currently under construction! i will complete it hopefully
+            by 24/07/26.
+
+            <!--
+        Well, well, well... you ignored the warning. Now you're trapped in
+        our spaceship with a bunch of aliens. Hope you're good under pressure.
+        -->
+          </p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
