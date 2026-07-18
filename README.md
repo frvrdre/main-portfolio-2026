@@ -6,7 +6,7 @@ This website is not meant to pretend I already know everything. It is a place wh
 
 I created this portfolio using plain HTML, CSS and JavaScript so I could strengthen my understanding of the fundamentals before relying too heavily on frameworks.
 
-The design uses a dark developer-inspired theme with blue accents, an animated grid background, responsive project cards and a floating personal logo.
+The design uses a dark tech-inspired theme with blue accents, an animated grid background, responsive project cards and small suprise!
 
 The main goal is to keep improving the website alongside my own development journey.
 
