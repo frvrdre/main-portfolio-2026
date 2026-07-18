@@ -848,8 +848,9 @@ footer {
   color: var(--color-underwater);
   text-shadow: 20px;
   font-family: "Ranchers", sans-serif;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 9900;
+  gap: 4;
   line-height: 1.7;
 }
 .dim-down {
