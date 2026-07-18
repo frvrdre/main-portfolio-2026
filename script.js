@@ -81,7 +81,7 @@ function returnToPortfolio() {
   chaosBtn.classList.remove("hidden");
   portfolioMode.classList.remove("dim-down");
 
-  chaosBtn.innerHTML = "IGNORE ME";
+  chaosBtn.innerHTML = "DONT CLICK ME";
 
   clickCount = 0;
   isAquariumActive = false;
