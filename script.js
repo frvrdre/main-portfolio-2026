@@ -77,7 +77,7 @@ function notiRemove() {
 
 function returnToPortfolio() {
   aquariumMode.classList.add("hidden");
-  constructTxt.classList.add("hiddem");
+  constructTxt.classList.add("hidden");
   chaosBtn.classList.remove("hidden");
   portfolioMode.classList.remove("dim-down");
 
