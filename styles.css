@@ -52,7 +52,7 @@
 
   --color-dark-two: rgb(31, 43, 105);
 
-  --color-underwater: rgb(198, 239, 33);
+  --color-underwater: rgb(127, 207, 41);
 
   --page-width: 70rem;
 
@@ -831,7 +831,7 @@ footer {
   top: 10rem;
   left: 5rem;
   padding: 1.2rem;
-
+  max-width: 95%;
   color: var(--color-bright);
 
   z-index: 5;
@@ -850,7 +850,7 @@ footer {
   font-family: "Ranchers", sans-serif;
   font-size: 3.5rem;
   font-weight: 9900;
-  gap: 4;
+  max-width: 75%;
   line-height: 1.7;
 }
 .dim-down {
@@ -1175,6 +1175,23 @@ footer {
   .return-btn {
     font-size: 1.3rem;
   }
+  .under-construct {
+  top: 7rem;
+  left: 1rem;
+  right: 1rem;
+
+  max-width: none;
+
+  padding: 0.5rem;
+}
+
+.under-construct h1 {
+  max-width: none;
+
+  font-size: 2.2rem;
+
+  line-height: 1.2;
+}
 }
 
 
