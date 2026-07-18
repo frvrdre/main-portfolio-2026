@@ -23,9 +23,9 @@
   </head>
 
   <body>
-    <!-- Easter Egg #2 -->
-
-    <!-- ACHIEVEMENT POPUP -->
+    <!-- =========================================
+         ACHIEVEMENT POPUP
+         ========================================= -->
 
     <div id="achievement" class="achievement hidden">
       <img
@@ -40,20 +40,28 @@
         id="ping"
         src="assets/ping.mp3"
         type="audio/mp3"
-        alt="my fiancé's notification sound"
       >
         Your browser does not support the audio element.
       </audio>
 
       <div class="achievement-text">
         <p class="achievement-title">Achievement Unlocked</p>
-        <p class="achievement-message">You ignored the warning.</p>
+
+        <p class="achievement-message">
+          You ignored the warning.
+        </p>
       </div>
     </div>
 
-    <!-- PORTFOLIO -->
+
+    <!-- =========================================
+         PORTFOLIO
+         ========================================= -->
 
     <div id="portfolio" class="portfolio">
+
+      <!-- HEADER -->
+
       <header class="site-header">
         <nav class="primary-nav">
           <a href="#hero">Home</a>
@@ -63,13 +71,17 @@
         </nav>
       </header>
 
+
       <main>
+
         <!-- HERO -->
 
         <section class="hero" id="hero">
           <h1>Andres Young</h1>
 
-          <p class="hero-sub">Aspiring Front-End Developer</p>
+          <p class="hero-sub">
+            Aspiring Front-End Developer
+          </p>
 
           <p>
             Hi, my name is Andres but most people call me Dre. I'm a aspiring
@@ -78,8 +90,14 @@
             journey I will be making a vast amount of projects.
           </p>
 
-          <a class="btn" href="https://github.com/frvrdre"> View on Github </a>
+          <a
+            class="btn"
+            href="https://github.com/frvrdre"
+          >
+            View on Github
+          </a>
         </section>
+
 
         <!-- ABOUT -->
 
@@ -91,6 +109,7 @@
             logistics industry, too pays the bills. However, my main passion
             lies within the IT industry, specifically front-end development. I
             have had a strong interest in all things IT for a very long time.
+
             This journey would not have been possible without my fiancée, who
             has supported me every step of the way. She has given me the free
             time to practise coding and has also helped with my projects by
@@ -99,13 +118,20 @@
           </p>
         </section>
 
+
         <!-- PROJECTS -->
 
         <section id="projects" class="projects">
           <h2>Projects</h2>
 
+
+          <!-- TEXT CHANGER -->
+
           <article class="project-card">
-            <img src="assets/textchanger.png" alt="sims1" />
+            <img
+              src="assets/textchanger.png"
+              alt="Text Changer project"
+            />
 
             <h3>Text Changer</h3>
 
@@ -134,8 +160,14 @@
             </div>
           </article>
 
+
+          <!-- DEV ARCHIVE -->
+
           <article class="project-card">
-            <img src="assets/archive.png" alt="sims1" />
+            <img
+              src="assets/archive.png"
+              alt="Dev Archive project"
+            />
 
             <h3>Dev Archive</h3>
 
@@ -164,8 +196,14 @@
             </div>
           </article>
 
+
+          <!-- STREAMER PORTFOLIO -->
+
           <article class="project-card">
-            <img src="assets/banksrl.png" alt="picutre of a project i made" />
+            <img
+              src="assets/banksrl.png"
+              alt="Picture of Streamer Portfolio project"
+            />
 
             <h3>Streamer Portfolio</h3>
 
@@ -184,12 +222,17 @@
                 View on Github
               </a>
 
-              <a class="btn" target="_blank" href="https://banksrl.co.uk/">
+              <a
+                class="btn"
+                target="_blank"
+                href="https://banksrl.co.uk/"
+              >
                 View Demo
               </a>
             </div>
           </article>
         </section>
+
 
         <!-- CONTACT -->
 
@@ -197,8 +240,14 @@
           <h2>Contact Me</h2>
 
           <ul>
+
+            <!-- LINKEDIN -->
+
             <li>
-              <img src="assets/linkedin.svg" alt="LinkedIn profile" />
+              <img
+                src="assets/linkedin.svg"
+                alt="LinkedIn profile"
+              />
 
               <a
                 target="_blank"
@@ -208,16 +257,36 @@
               </a>
             </li>
 
-            <li>
-              <img src="assets/discord.svg" alt="Discord username" />
 
-              <a target="_blank" href="#"> Discord/@frvrrdre </a>
+            <!-- DISCORD -->
+
+            <li>
+              <img
+                src="assets/discord.svg"
+                alt="Discord username"
+              />
+
+              <a
+                target="_blank"
+                href="#"
+              >
+                Discord/@frvrrdre
+              </a>
             </li>
 
-            <li>
-              <img src="assets/github.svg" alt="Github Page" />
 
-              <a target="_blank" href="https://github.com/frvrdre">
+            <!-- GITHUB -->
+
+            <li>
+              <img
+                src="assets/github.svg"
+                alt="Github Page"
+              />
+
+              <a
+                target="_blank"
+                href="https://github.com/frvrdre"
+              >
                 GitHub/@frvrdre
               </a>
             </li>
@@ -231,53 +300,89 @@
         </section>
       </main>
 
-      <footer>Copyright@ Andres Young 2026</footer>
+
+      <!-- FOOTER -->
+
+      <footer>
+        Copyright@ Andres Young 2026
+      </footer>
     </div>
 
-    <!-- EASTER EGG BUTTON -->
+
+    <!-- =========================================
+         EASTER EGG BUTTON
+         ========================================= -->
 
     <section class="easter-egg">
-      <button id="chaos-btn" class="chaos-btn">IGNORE ME</button>
+      <button
+        id="chaos-btn"
+        class="chaos-btn"
+      >
+        DONT CLICK ME
+      </button>
     </section>
+    
+    <div id="under-construct" class="under-construct hidden">
+      <h1> This is currently under construction! I will complete it hopefully
+          by 24/07/26. <em>-Fun fact: the notification sound you just heard is actually my fiancés voice!</em>     
+      </h1>
+       </div>
 
-    <!-- PORTFOLIO INVADERS -->
+    <!-- =========================================
+         AQUARIUM MODE
 
-    <div id="game-screen" class="game-screen hidden">
-      <header class="game-header">
-        <h1>Portfolio Invaders</h1>
-      </header>
+         The normal portfolio stays underneath.
 
-      <div class="game-toolbar">
-        <section class="game-stats" id="game-stats">
-          <p id="score" class="score">Score: 0</p>
-          <p id="lives" class="lives">Lives: 3</p>
-        </section>
+         JavaScript will eventually:
+         - activate the water
+         - create bubbles
+         - create fish
+         - make fish follow cursor
+         - remove everything on return
+         ========================================= -->
 
-        <div class="game-btns">
-          <button id="exit-btn" class="exit-btn">EXIT</button>
-        </div>
+    <div
+      id="aquarium-mode"
+      class="aquarium-mode hidden"
+    >
+
+      <!-- WATER LAYER -->
+
+
+      <div
+        id="water-layer"
+        class="water-layer"
+      ></div>
+
+
+      <!-- BUBBLE LAYER -->
+
+      <div
+        id="bubble-layer"
+        class="bubble-layer"
+      ></div>
+
+
+      <!-- FISH LAYER -->
+
+      <div
+        id="fish-layer"
+        class="fish-layer"
+      ></div>
+
+
+      <!-- AQUARIUM CONTROLS -->
+
+      <div class="aquarium-controls">
+        <button
+          id="return-btn"
+          class="return-btn"
+        >
+          RETURN
+        </button>
       </div>
 
-      <div class="game-content">
-        <div id="game-area" class="game-area">
-          <div id="player" class="player"></div>
-          <div id="enemyOne" class="enemyOne"></div>
-          <div id="enemyTwo" class="enemyTwo"></div>
-          <div id="enemyThree" class="enemyThree"></div>
-        </div>
-
-        <div id="gm-text-container" class="gm-text-container">
-          <p id="game-text" class="game-text">
-            This is currently under construction! I will complete it hopefully
-            by 24/07/26. <em>-Fun fact: the notification sound you just heard is actually my fiancés voice!</em>
-
-            <!--
-        Well, well, well... you ignored the warning. Now you're trapped in
-        our spaceship with a bunch of aliens. Hope you're good under pressure.
-        -->
-          </p>
-        </div>
-      </div>
     </div>
+
   </body>
 </html>
