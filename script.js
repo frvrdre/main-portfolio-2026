@@ -3,10 +3,6 @@
 let clickCount = 0;
 let isAquariumActive = false;
 
-// ARRAYS
-
-const fish = [];
-const bubbles = [];
 
 // DOM ELEMENTS
 
@@ -17,6 +13,8 @@ const aquariumMode = document.getElementById("aquarium-mode");
 const waterLayer = document.getElementById("water-layer");
 const fishLayer = document.getElementById("fish-layer");
 const bubbleLayer = document.getElementById("bubble-layer");
+const fishSpawn = document.createElement("div")
+
 const constructTxt = document.getElementById("under-construct");
 const portfolioMode = document.getElementById("portfolio");
 
@@ -25,6 +23,7 @@ const achievementPop = document.getElementById("achievement");
 const pingAudio = document.getElementById("ping");
 
 // AQUARIUM
+
 
 // I will build these later:
 //
@@ -47,6 +46,7 @@ function clickChaos() {
     aquariumMode.classList.remove("hidden");
     constructTxt.classList.remove("hidden");
     portfolioMode.classList.add("dim-down");
+    fishSpawn.classList.add("fish");
     isAquariumActive = true;
     
     chaosBtn.classList.add("hidden");
