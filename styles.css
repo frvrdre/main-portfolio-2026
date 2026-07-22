@@ -2,73 +2,45 @@
 
 @import url("https://fonts.googleapis.com/css2?family=VT323&family=Workbench&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=VT323&family=Workbench&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ranchers&family=VT323&family=Workbench&display=swap");
 
 
-/* =========================================
-   GLOBAL VARIABLES
-   ========================================= */
+/* Global variables */
 
 :root {
   --color-page-background: rgb(16, 18, 27);
-
   --color-surface: rgb(31, 39, 74);
-
   --color-card: rgb(36, 46, 92);
-
   --color-primary: rgb(64, 94, 225);
-
   --color-primary-hover: rgb(84, 112, 235);
-
   --color-secondary: rgb(53, 72, 160);
-
   --color-secondary-hover: rgb(42, 58, 135);
-
   --color-text: rgb(255, 255, 255);
-
   --color-text-muted: rgb(190, 198, 225);
-
   --color-heading: rgb(94, 119, 235);
-
   --color-focus: rgb(94, 119, 235);
-
   --color-shadow: rgb(64, 94, 225);
-
   --color-scroll-bar: rgb(64, 94, 225);
-
   --color-scroll-bar2: rgb(84, 112, 235);
-
   --color-scroll-bar3: rgb(42, 58, 135);
-
   --color-grid-horizontal: rgba(64, 94, 225, 0.22);
-
   --color-grid-vertical: rgba(64, 94, 225, 0.12);
-
   --color-bright: rgb(94, 119, 235);
-
   --color-bright-two: rgb(64, 94, 225);
-
   --color-dark: rgb(42, 58, 135);
-
   --color-dark-two: rgb(31, 43, 105);
-
   --color-underwater: rgb(127, 207, 41);
 
   --page-width: 70rem;
-
   --page-gutter: 2rem;
 
   --radius-small: 4px;
-
   --radius-medium: 8px;
-
   --radius-large: 10px;
 }
 
 
-/* =========================================
-   GLOBAL STYLES
-   ========================================= */
+/* Global styles */
 
 *,
 *::before,
@@ -116,9 +88,7 @@ body {
 }
 
 
-/* =========================================
-   PAGE ANIMATIONS
-   ========================================= */
+/* Page animations */
 
 @keyframes move-grid {
   from {
@@ -142,9 +112,7 @@ body {
 }
 
 
-/* =========================================
-   BASIC ELEMENT STYLES
-   ========================================= */
+/* Basic element styles */
 
 a {
   color: inherit;
@@ -172,9 +140,7 @@ select {
 }
 
 
-/* =========================================
-   SHARED PAGE WIDTH
-   ========================================= */
+/* Shared page width */
 
 .site-header,
 main,
@@ -193,9 +159,7 @@ main > section {
 }
 
 
-/* =========================================
-   HEADER AND NAVIGATION
-   ========================================= */
+/* Header */
 
 .site-header {
   position: sticky;
@@ -209,6 +173,8 @@ main > section {
   margin-bottom: 1rem;
 }
 
+
+/* Navigation */
 
 .primary-nav {
   display: flex;
@@ -263,9 +229,7 @@ main > section {
 }
 
 
-/* =========================================
-   TYPOGRAPHY
-   ========================================= */
+/* Typography */
 
 h1,
 h2,
@@ -336,9 +300,7 @@ p {
 }
 
 
-/* =========================================
-   ACHIEVEMENT POPUP
-   ========================================= */
+/* Achievement popup */
 
 .achievement {
   position: fixed;
@@ -419,9 +381,7 @@ p {
 }
 
 
-/* =========================================
-   ACHIEVEMENT ANIMATIONS
-   ========================================= */
+/* Achievement animation */
 
 .fade-in {
   animation:
@@ -483,9 +443,7 @@ p {
 }
 
 
-/* =========================================
-   HERO
-   ========================================= */
+/* Hero */
 
 .hero {
   min-height: 70vh;
@@ -523,37 +481,150 @@ p {
 }
 
 
-/* =========================================
-   ABOUT
-   ========================================= */
+/* About */
 
 .about p {
   margin-bottom: 0;
 }
 
 
-/* =========================================
-   PROJECTS
-   ========================================= */
+/* Projects */
 
 .projects {
-  display: grid;
+  display: block;
 
-  grid-template-columns:
-    repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+}
+
+
+.projects-header {
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
 
   gap: 1rem;
+
+  margin-bottom: 1.5rem;
 }
 
 
-.projects > h2 {
-  grid-column: 1 / -1;
-
-  margin-bottom: 0.5rem;
+.projects-header h2 {
+  margin-bottom: 0;
 }
 
+
+/* Carousel controls */
+
+.carousel-controls {
+  display: flex;
+
+  align-items: center;
+
+  gap: 0.7rem;
+}
+
+
+.carousel-btn {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  width: 48px;
+
+  height: 48px;
+
+  padding: 0;
+
+  color: var(--color-text);
+
+  background-color: var(--color-primary);
+
+  font-size: 1.8rem;
+
+  line-height: 1;
+
+  border: 1px solid transparent;
+
+  border-radius: var(--radius-small);
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.1s ease,
+    opacity 0.2s ease;
+}
+
+
+.carousel-btn:hover {
+  background-color: var(--color-primary-hover);
+
+  box-shadow:
+    4px 6px 0 var(--color-dark-two);
+
+  transform: translateY(-2px);
+}
+
+
+.carousel-btn:active {
+  transform: translateY(0);
+}
+
+
+.carousel-btn:focus-visible {
+  outline: 3px solid var(--color-text);
+
+  outline-offset: 4px;
+}
+
+
+.carousel-btn:disabled {
+  opacity: 0.35;
+
+  cursor: default;
+
+  box-shadow: none;
+
+  transform: none;
+}
+
+
+/* Projects carousel */
+
+.projects-carousel {
+  display: flex;
+
+  gap: 1rem;
+
+  width: 100%;
+
+  padding-bottom: 1rem;
+
+  overflow-x: auto;
+
+  scroll-behavior: smooth;
+
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+}
+
+
+.projects-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* Project cards */
 
 .project-card {
+  flex: 0 0 calc((100% - 2rem) / 3);
+
   min-width: 0;
 
   display: flex;
@@ -571,6 +642,8 @@ p {
   border-radius: var(--radius-large);
 
   overflow: hidden;
+
+  scroll-snap-align: start;
 
   transition:
     transform 0.2s ease,
@@ -622,27 +695,20 @@ p {
 }
 
 
-.project-card .btn {
-  flex: 0 1 auto;
-}
-
-
-/* =========================================
-   PORTFOLIO BUTTONS
-   ========================================= */
+/* Buttons container */
 
 .buttons-container {
   display: flex;
 
   flex-direction: row;
 
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 
   gap: 0.9rem;
-
-  white-space: nowrap;
 }
 
+
+/* Portfolio buttons */
 
 .btn {
   display: inline-flex;
@@ -697,9 +763,7 @@ p {
 }
 
 
-/* =========================================
-   CONTACT
-   ========================================= */
+/* Contact */
 
 .contact p {
   margin-bottom: 1rem;
@@ -752,9 +816,7 @@ p {
 }
 
 
-/* =========================================
-   FOOTER
-   ========================================= */
+/* Footer */
 
 footer {
   display: flex;
@@ -773,9 +835,7 @@ footer {
 }
 
 
-/* =========================================
-   EASTER EGG BUTTON
-   ========================================= */
+/* Easter egg button */
 
 .easter-egg {
   position: fixed;
@@ -825,16 +885,23 @@ footer {
     transform 0.1s ease;
 }
 
+
+/* Under construction */
+
 .under-construct {
   position: fixed;
 
   top: 10rem;
+
   left: 5rem;
-  padding: 1.2rem;
-  max-width: 95%;
-  color: var(--color-bright);
 
   z-index: 5;
+
+  max-width: 95%;
+
+  padding: 1.2rem;
+
+  color: var(--color-bright);
 
   pointer-events: auto;
 
@@ -844,21 +911,30 @@ footer {
     transform 0.1s ease;
 }
 
+
 .under-construct h1 {
-  color: var(--color-underwater);
-  text-shadow: 20px;
-  font-family: "Ranchers", sans-serif;
-  font-size: 3.5rem;
-  font-weight: 9900;
   max-width: 75%;
+
+  color: var(--color-underwater);
+
+  text-shadow: 20px;
+
+  font-family: "Ranchers", sans-serif;
+
+  font-size: 3.5rem;
+
+  font-weight: 9900;
+
   line-height: 1.7;
 }
+
+
 .dim-down {
   opacity: 0.07;
 }
-/* =========================================
-   AQUARIUM MODE
-   ========================================= */
+
+
+/* Aquarium mode */
 
 .aquarium-mode {
   position: fixed;
@@ -873,9 +949,7 @@ footer {
 }
 
 
-/* =========================================
-   AQUARIUM LAYERS
-   ========================================= */
+/* Aquarium layers */
 
 .water-layer,
 .bubble-layer,
@@ -886,9 +960,7 @@ footer {
 }
 
 
-/* =========================================
-   WATER
-   ========================================= */
+/* Water */
 
 .water-layer {
   z-index: 1;
@@ -904,14 +976,11 @@ footer {
 
   pointer-events: none;
 
-  animation: waterrise 4s ease-out forwards;;
+  animation: waterrise 4s ease-out forwards;
 }
 
 
-
-/* =========================================
-   BUBBLE LAYER
-   ========================================= */
+/* Bubble layer */
 
 .bubble-layer {
   z-index: 2;
@@ -920,9 +989,7 @@ footer {
 }
 
 
-/* =========================================
-   FISH LAYER
-   ========================================= */
+/* Fish layer */
 
 .fish-layer {
   z-index: 3;
@@ -931,9 +998,7 @@ footer {
 }
 
 
-/* =========================================
-   AQUARIUM CONTROLS
-   ========================================= */
+/* Aquarium controls */
 
 .aquarium-controls {
   position: fixed;
@@ -948,9 +1013,7 @@ footer {
 }
 
 
-/* =========================================
-   RETURN BUTTON
-   ========================================= */
+/* Return button */
 
 .return-btn {
   padding: 0.35rem 0.7rem;
@@ -997,11 +1060,7 @@ footer {
 }
 
 
-/* =========================================
-   FISH
-
-   
-   ========================================= */
+/* Fish */
 
 .fish {
   position: absolute;
@@ -1014,11 +1073,7 @@ footer {
 }
 
 
-/* =========================================
-   BUBBLES
-
-   
-   ========================================= */
+/* Bubbles */
 
 .bubble {
   position: absolute;
@@ -1036,24 +1091,19 @@ footer {
 }
 
 
-/* =========================================
-   HIDDEN ELEMENTS
-   ========================================= */
+/* Hidden */
 
 .hidden {
   display: none;
 }
 
 
-/* =========================================
-   RESPONSIVE LAYOUT
-   ========================================= */
+/* Tablet */
 
 @media (max-width: 900px) {
 
-  .projects {
-    grid-template-columns:
-      repeat(2, minmax(0, 1fr));
+  .project-card {
+    flex-basis: calc((100% - 1rem) / 2);
   }
 
 
@@ -1068,6 +1118,8 @@ footer {
 }
 
 
+/* Mobile */
+
 @media (max-width: 650px) {
 
   :root {
@@ -1080,8 +1132,8 @@ footer {
   }
 
 
-  .projects {
-    grid-template-columns: 1fr;
+  .project-card {
+    flex-basis: 88%;
   }
 
 
@@ -1115,8 +1167,19 @@ footer {
   p {
     font-size: 1.35rem;
   }
+
+
+  .carousel-btn {
+    width: 42px;
+
+    height: 42px;
+
+    font-size: 1.5rem;
+  }
 }
 
+
+/* Small mobile */
 
 @media (max-width: 500px) {
 
@@ -1139,6 +1202,25 @@ footer {
   }
 
 
+  .projects-header {
+    align-items: flex-end;
+  }
+
+
+  .carousel-controls {
+    gap: 0.4rem;
+  }
+
+
+  .carousel-btn {
+    width: 38px;
+
+    height: 38px;
+
+    font-size: 1.3rem;
+  }
+
+
   .buttons-container {
     gap: 0.4rem;
   }
@@ -1152,6 +1234,8 @@ footer {
 
 
   .project-card {
+    flex-basis: 90%;
+
     padding: 0.7rem;
   }
 
@@ -1175,29 +1259,32 @@ footer {
   .return-btn {
     font-size: 1.3rem;
   }
+
+
   .under-construct {
-  top: 7rem;
-  left: 1rem;
-  right: 1rem;
+    top: 7rem;
 
-  max-width: none;
+    left: 1rem;
 
-  padding: 0.5rem;
+    right: 1rem;
+
+    max-width: none;
+
+    padding: 0.5rem;
+  }
+
+
+  .under-construct h1 {
+    max-width: none;
+
+    font-size: 2.2rem;
+
+    line-height: 1.2;
+  }
 }
 
-.under-construct h1 {
-  max-width: none;
 
-  font-size: 2.2rem;
-
-  line-height: 1.2;
-}
-}
-
-
-/* =========================================
-   SHAKE ANIMATION
-   ========================================= */
+/* Shake animation */
 
 .shake {
   animation:

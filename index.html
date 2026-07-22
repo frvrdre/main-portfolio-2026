@@ -23,9 +23,7 @@
   </head>
 
   <body>
-    <!-- =========================================
-         ACHIEVEMENT POPUP
-         ========================================= -->
+    <!-- Achievement popup -->
 
     <div id="achievement" class="achievement hidden">
       <img
@@ -53,14 +51,11 @@
       </div>
     </div>
 
-
-    <!-- =========================================
-         PORTFOLIO
-         ========================================= -->
+    <!-- Portfolio -->
 
     <div id="portfolio" class="portfolio">
 
-      <!-- HEADER -->
+      <!-- Header -->
 
       <header class="site-header">
         <nav class="primary-nav">
@@ -71,10 +66,9 @@
         </nav>
       </header>
 
-
       <main>
 
-        <!-- HERO -->
+        <!-- Hero -->
 
         <section class="hero" id="hero">
           <h1>Andres Young</h1>
@@ -98,8 +92,7 @@
           </a>
         </section>
 
-
-        <!-- ABOUT -->
+        <!-- About -->
 
         <section class="about" id="about">
           <h2>Who is Andres?</h2>
@@ -118,16 +111,37 @@
           </p>
         </section>
 
-
-        <!-- PROJECTS -->
+        <!-- Projects carousel -->
 
         <section id="projects" class="projects">
-          <h2>Projects</h2>
 
+          <div class="projects-header">
+            <h2>Projects</h2>
 
-           <article class="project-card">
+            <div class="carousel-controls">
+              <button
+                id="projects-prev"
+                class="carousel-btn"
+                aria-label="Previous project"
+              >
+                &larr;
+              </button>
+
+              <button
+                id="projects-next"
+                class="carousel-btn"
+                aria-label="Next project"
+              >
+                &rarr;
+              </button>
+            </div>
+          </div>
+
+          <div id="projects-carousel" class="projects-carousel">
+
+                       <article class="project-card">
             <img
-              src="assets/archive.png"
+              src="assets/cookbook.png"
               alt="Fiancee Cook Book"
             />
 
@@ -158,7 +172,7 @@
           
           <article class="project-card">
             <img
-              src="assets/archive.png"
+              src="assets/edley.png"
               alt="Tribute Website project"
             />
 
@@ -190,123 +204,122 @@
             </div>
           </article>
 
-          <!-- TEXT CHANGER -->
+            <!-- Text Changer -->
 
-          <article class="project-card">
-            <img
-              src="assets/textchanger.png"
-              alt="Text Changer project"
-            />
+            <article class="project-card">
+              <img
+                src="assets/textchanger.png"
+                alt="Text Changer project"
+              />
 
-            <h3>Text Changer</h3>
+              <h3>Text Changer</h3>
 
-            <p>
-              This is one of my earlier projects this year which taught me the
-              foundations of DOM manipulation in javascript and with a little
-              help from my fiance as she picked the color!
-            </p>
+              <p>
+                This is one of my earlier projects this year which taught me the
+                foundations of DOM manipulation in javascript and with a little
+                help from my fiance as she picked the color!
+              </p>
 
-            <div class="buttons-container">
-              <a
-                class="btn"
-                target="_blank"
-                href="https://github.com/frvrdre/TextChanger"
-              >
-                View on Github
-              </a>
+              <div class="buttons-container">
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://github.com/frvrdre/TextChanger"
+                >
+                  View on Github
+                </a>
 
-              <a
-                class="btn"
-                target="_blank"
-                href="https://text-changer-phi.vercel.app/"
-              >
-                View Demo
-              </a>
-            </div>
-          </article>
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://text-changer-phi.vercel.app/"
+                >
+                  View Demo
+                </a>
+              </div>
+            </article>
 
+            <!-- Dev Archive -->
 
-          <!-- DEV ARCHIVE -->
+            <article class="project-card">
+              <img
+                src="assets/archive.png"
+                alt="Dev Archive project"
+              />
 
-          <article class="project-card">
-            <img
-              src="assets/archive.png"
-              alt="Dev Archive project"
-            />
+              <h3>Dev Archive</h3>
 
-            <h3>Dev Archive</h3>
+              <p>
+                A website to store all the tools I have found that can be used for
+                development and which I will continue to update it overtime, it
+                also has a music player with a couple songs I like.
+              </p>
 
-            <p>
-              A website to store all the tools I have found that can be used for
-              development and which I will continue to update it overtime, it
-              also has a music player with a couple songs I like.
-            </p>
+              <div class="buttons-container">
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://github.com/frvrdre/archive.dev"
+                >
+                  View on Github
+                </a>
 
-            <div class="buttons-container">
-              <a
-                class="btn"
-                target="_blank"
-                href="https://github.com/frvrdre/archive.dev"
-              >
-                View on Github
-              </a>
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://archive-dev-chi.vercel.app/"
+                >
+                  View Demo
+                </a>
+              </div>
+            </article>
 
-              <a
-                class="btn"
-                target="_blank"
-                href="https://archive-dev-chi.vercel.app/"
-              >
-                View Demo
-              </a>
-            </div>
-          </article>
+            <!-- Streamer Portfolio -->
 
+            <article class="project-card">
+              <img
+                src="assets/banksrl.png"
+                alt="Picture of Streamer Portfolio project"
+              />
 
-          <!-- STREAMER PORTFOLIO -->
+              <h3>Streamer Portfolio</h3>
 
-          <article class="project-card">
-            <img
-              src="assets/banksrl.png"
-              alt="Picture of Streamer Portfolio project"
-            />
+              <p>
+                This website was made a small content creator who wanted to have a
+                different way to display some of their content and find out who
+                they are.
+              </p>
 
-            <h3>Streamer Portfolio</h3>
+              <div class="buttons-container">
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://github.com/frvrdre/Streamer-portfolio"
+                >
+                  View on Github
+                </a>
 
-            <p>
-              This website was made a small content creator who wanted to have a
-              different way to display some of their content and find out who
-              they are.
-            </p>
+                <a
+                  class="btn"
+                  target="_blank"
+                  href="https://banksrl.co.uk/"
+                >
+                  View Demo
+                </a>
+              </div>
+            </article>
 
-            <div class="buttons-container">
-              <a
-                class="btn"
-                target="_blank"
-                href="https://github.com/frvrdre/Streamer-portfolio"
-              >
-                View on Github
-              </a>
-
-              <a
-                class="btn"
-                target="_blank"
-                href="https://banksrl.co.uk/"
-              >
-                View Demo
-              </a>
-            </div>
-          </article>
+          </div>
         </section>
 
-
-        <!-- CONTACT -->
+        <!-- Contact -->
 
         <section id="contact" class="contact">
           <h2>Contact Me</h2>
 
           <ul>
 
-            <!-- LINKEDIN -->
+            <!-- LinkedIn -->
 
             <li>
               <img
@@ -322,8 +335,7 @@
               </a>
             </li>
 
-
-            <!-- DISCORD -->
+            <!-- Discord -->
 
             <li>
               <img
@@ -339,8 +351,7 @@
               </a>
             </li>
 
-
-            <!-- GITHUB -->
+            <!-- Github -->
 
             <li>
               <img
@@ -365,18 +376,14 @@
         </section>
       </main>
 
-
-      <!-- FOOTER -->
+      <!-- Footer -->
 
       <footer>
         Copyright@ Andres Young 2026
       </footer>
     </div>
 
-
-    <!-- =========================================
-         EASTER EGG BUTTON
-         ========================================= -->
+    <!-- Easter egg button -->
 
     <section class="easter-egg">
       <button
@@ -386,57 +393,47 @@
         DONT CLICK ME
       </button>
     </section>
-    
+
     <div id="under-construct" class="under-construct hidden">
-      <h1> This is currently under construction! I will complete it hopefully
-          by 24/07/26. <em>-Fun fact: the notification sound you just heard is actually my Fiancées voice!</em>     
+      <h1>
+        This is currently under construction! I will complete it hopefully
+        by 24/07/26.
+        <em>
+          -Fun fact: the notification sound you just heard is actually my
+          Fiancées voice!
+        </em>
       </h1>
-       </div>
+    </div>
 
-    <!-- =========================================
-         AQUARIUM MODE
-
-         The normal portfolio stays underneath.
-
-         JavaScript will eventually:
-         - activate the water
-         - create bubbles
-         - create fish
-         - make fish follow cursor
-         - remove everything on return
-         ========================================= -->
+    <!-- Aquarium mode -->
 
     <div
       id="aquarium-mode"
       class="aquarium-mode hidden"
     >
 
-      <!-- WATER LAYER -->
-
+      <!-- Water layer -->
 
       <div
         id="water-layer"
         class="water-layer"
       ></div>
 
-
-      <!-- BUBBLE LAYER -->
+      <!-- Bubble layer -->
 
       <div
         id="bubble-layer"
         class="bubble-layer"
       ></div>
 
-
-      <!-- FISH LAYER -->
+      <!-- Fish layer -->
 
       <div
         id="fish-layer"
         class="fish-layer"
       ></div>
 
-
-      <!-- AQUARIUM CONTROLS -->
+      <!-- Aquarium controls -->
 
       <div class="aquarium-controls">
         <button
